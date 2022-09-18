@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        #form1, #form2{
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        No need for lab final (HTML)
+        HTML favicon
+        HTML URL Encode
+        HTML vs. XHTML
+     -->
+
+     <!-- basic form design start -->
+     <form action="" id="form1">
+         <fieldset>
+            <legend>Apel er Apel Bagan</legend>
+            <div>
+                <label for="customerName">Your Name</label>
+                <input type="text" id="customerName" name="customerName"><br><br>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"><br><br>
+            </div>
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+         </fieldset>
+     </form>
+     <!-- basic form design end -->
+<br>
+     <!-- registration form design start -->
+     <form action="" id="form2">
+         <fieldset>
+            <legend>Registration Form</legend>
+            <div>
+                <label for="userName">User Name: </label>
+                <input id="userName" type="text">
+            </div> 
+            <br>
+            <div>
+                <label for="emailID">Email ID: </label>
+                <input id="emailID" type="email">
+            </div> 
+            <br>
+            <div>
+                <label for="userDOB">Date of birth: </label>
+                <input id="userDOB" type="date">
+            </div> 
+            <br>
+            <div>
+                <label for="phoneNumber">Phone Number: </label>
+                <input id="phoneNumber" type="number">
+            </div> 
+            <br>
+            <div>
+                <label for="password">Password: </label>
+                <input id="password" type="password">
+            </div> 
+            <br>
+            <div>
+                <label for="gender">
+                    <span id="male"><input type="radio" name="gender"> Male</span>
+                    <span id="female"><input type="radio" name="gender"> Female</span>
+                </label>
+            </div> 
+            <br>
+            <div>
+                <span><input type="checkbox">Accept our <a href="#">Terms</a> and <a href="#">Conditions</a></span>
+            </div>
+            <br>
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+         </fieldset>
+     </form>
+     <!-- registration form design end -->
+</body>
+</html>
