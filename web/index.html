@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hader_id, #para_id1{
+            text-align: center;
+        }
+    
+    </style>
+    <script>
+        var x = 1;
+
+        function hide_text(){
+        if (x == 0){
+                document.getElementById('myImage').src='./pic_bulbon.gif';
+                x = 1;
+            
+        }
+        else{
+            document.getElementById('myImage').src='./pic_bulboff.gif';
+                x = 0;
+        }
+
+    }
+
+        
+    </script>
+</head>
+<body>
+    <h1 id="hader_id">Hello there</h1>
+    <button id = "button_id" onclick= hide_text()>click me</button>
+    <img id="myImage" src="./pic_bulboff.gif" style="width:100px">
+    <p id="paraid_2"></p>
+</body>
+</html>
