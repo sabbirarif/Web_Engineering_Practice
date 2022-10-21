@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <form class="signup-form">
+        <div class="form-header">
+            <h1>Create Account</h1>
+        </div>
+        <div class="form-body">
+            <div class="row">
+                <div class="input-group">
+                   <label >First Name</label> 
+                   <input type="text" required/>
+                </div>
+                <div class="input-group">
+                    <label >Last Name</label> 
+                    <input type="text" required/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                <label>Email</label>
+                <input id="emailID" type="email" required/>
+            </div>
+
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Password</label>
+                    <input id="passwordID" type="password" required/>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input id="phoneID" type="text" required/>
+                </div>
+            </div>
+            <!-- <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div>
+                        <label>
+                            <input type="radio" name="gender"/>
+                        Male
+                    </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="gender"/>
+                        Female</label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="gender"/>
+                        Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Hobbies</label>
+                <div class="checkbox-group">
+                  <div>
+                    <label>
+                        <input type="checkbox">
+                        Music
+                    </label>
+                  </div> 
+                  <div>
+                    <label>
+                        <input type="checkbox">
+                        Cook
+                    </label>
+        
+                    </div>
+                  <div>
+                    <label>
+                        <input type="checkbox">
+                       Travel
+                    </label>
+                  </div> 
+                  
+                  <div>
+                    <label>
+                        <input type="checkbox">
+                        Movie
+                    </label>
+                  </div> 
+                      
+                </div>
+           </div>
+                <div class="row">
+                    <div class="input-group">
+                    <label>Source of Income</label>
+                    <select>
+                    <option>Employed</option>
+                    <option>Self-Emplyed</option>
+                    <option>Unemployed</option>
+                    </select>  
+                </div>
+            <div class="input-group">
+                <label>Income</label>
+                <div class="range-group">
+                    <input type="range" min="20" max="200" step="5" onchange="changeSliderValue(this.value)"/>
+                    <label id="income-lebel">20K</label>
+                </div>
+            </div>
+
+           </div>
+           <div>
+
+           </div class="row">
+                <div class="input-group">
+                    <label >Upload Profile Picture</label>
+                    <input type="file"/>
+                </div>
+                <div class="input-group">
+                    <label>Age</label>
+                    <input type="number"/>
+                </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label >Bio</label>
+                    <textarea></textarea>
+                </div>
+            </div>    
+
+        </div>-->
+
+        <div class="form-footer">
+            <button onclick="validate()" class="btn">Create</button>
+        </div>
+    </form>
+    <div id="new-container">
+        
+    </div>
+    <button>Add new line</button>
+    <!-- <script>
+        const changeSliderValue = (value) => {
+            document.getElementById("income-lebel").innerText=value + " K"
+        }
+    </script> -->
+    <script src="js/validation.js"></script>
+    
+</body>
+</html>
